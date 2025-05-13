@@ -8,7 +8,7 @@
 - API 保護與未授權處理
 - CORS 跨域處理
 - CSRF 安全處理
-- AOuth2.0 社交登入
+- OAuth2.0 社交登入
 - Filter 監看登入紀錄
 
 ---
@@ -147,7 +147,7 @@ Authorization: Bearer <JWT Token>
 
 ✅ 自訂 Filter (監看使用者登入紀錄)
 
-✅ OAuth2 第三方社交登入（可擴充支援 LINE / Facebook / Google）
+✅ OAuth2 第三方社交登入（可擴充支援 LINE / Facebook / Google /Github）
 
 
 
