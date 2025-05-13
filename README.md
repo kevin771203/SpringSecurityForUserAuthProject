@@ -1,12 +1,3 @@
----
-
-````markdown
-# 🔐 SpringSecurityForUserAuthProject
-
-使用 Spring Security 實作完整的使用者登入、驗證與授權機制，支援角色權限控制與保護後端 API 安全。
-
----
-
 ## 📌 專案簡介
 
 本專案是使用 Spring Boot 與 Spring Security 架構，實作常見的使用者登入與權限驗證流程。透過 JWT 、Session 或基本表單登入，達成以下功能：
