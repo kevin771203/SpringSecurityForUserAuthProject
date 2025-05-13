@@ -8,6 +8,8 @@
 - API 保護與未授權處理
 - CORS 跨域處理
 - CSRF 安全處理
+- AOuth2.0 社交登入
+- Filter 監看登入紀錄
 
 ---
 
@@ -130,13 +132,24 @@ Authorization: Bearer <JWT Token>
 
 ---
 
-## ✅ 實作重點特色
+## 🚀Spring Security 安全性設定說明
+此專案使用 Spring Security，整合以下功能：
 
-* 支援多角色授權（使用 `@PreAuthorize` 或 URL-based 權限控制）
-* 密碼安全（使用 Bcrypt 加密）
-* 可擴充支援 JWT、OAuth2、第三方登入（LINE、Facebook、Apple 等）
-* 分離登入成功/失敗處理邏輯
-* API 端點統一由 Security 管理，符合企業安全需求
+✅ Session 管理
+
+✅ CSRF 防護（支援 Cookie 傳遞 Token）
+
+✅ CORS 跨來源設定
+
+✅ 表單登入（/login）
+
+✅ 角色權限控管（一般會員、管理員）
+
+✅ 自訂 Filter (監看使用者登入紀錄)
+
+✅ OAuth2 第三方社交登入（可擴充支援 LINE / Facebook / Google）
+
+
 
 ---
 
