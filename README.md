@@ -1,6 +1,6 @@
 ## 📌 專案簡介
 
-本專案是使用 Spring Boot 與 Spring Security 架構，實作常見的使用者登入與權限驗證流程。透過 JWT 、Session 或基本表單登入，達成以下功能：
+本專案是使用 Spring Boot 與 Spring Security 架構，實作常見的使用者登入與權限驗證流程。透過 Session 或基本表單登入，達成以下功能：
 
 - 使用者註冊與登入
 - 密碼加密（BCrypt）
@@ -28,7 +28,7 @@
 
 1. 使用者透過 `/login` 發送帳密
 2. 系統透過 `UserDetailsService` 查詢帳號並驗證密碼（BCrypt 編碼比對）
-3. 登入成功後產生 Session 或 JWT Token（視實作而定）
+3. 登入成功後產生 Session（視實作而定）
 4. 後續 API 請求將會被 `SecurityFilterChain` 判斷是否有存取權限
 
 ---
